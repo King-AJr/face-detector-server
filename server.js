@@ -30,11 +30,11 @@ app.use(cors())
 
 
 
-app.post('/signin',(req, res) => {
+app.post('https://smart-detector-server.herokuapp.com/signin',(req, res) => {
     signin.handleSignIn(req, res, db, bcrypt)
 })
 
-app.post('/register',(req, res) => {
+app.post('https://smart-detector-server.herokuapp.com/register',(req, res) => {
     register.handleRegister(req, res, db, bcrypt)
 })
 
@@ -44,12 +44,12 @@ app.get('/profile/:id',(req, res) => {
 })
 
 
-app.put('/image', (req, res) => {
+app.put('https://smart-detector-server.herokuapp.com/image', (req, res) => {
     image.handleImage(req, res, db, bcrypt)
 })
 
-app.get('/', (req, res) => {
-    res.send('Success is yours');})
+/*app.get('/', (req, res) => {
+    res.send('Success is yours');})*/
 
    /* bcrypt.hash("bacon", null, null, function(err, hash) {
         // Store hash in your password DB.
