@@ -39,9 +39,9 @@ app.post('https://smart-detector-server.herokuapp.com/register',(req, res) => {
 })
 
 
-app.get('/profile/:id',(req, res) => {
+/*app.get('/profile/:id',(req, res) => {
     profile.handleId(req, res, db, bcrypt)
-})
+})*/
 
 
 app.put('https://smart-detector-server.herokuapp.com/image', (req, res) => {
